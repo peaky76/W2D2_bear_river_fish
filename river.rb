@@ -13,6 +13,10 @@ class River
         end
     end
 
+    def remove_fish(fish_name)
+        @fish_stock.delete(fish_name)
+    end
+
     def fish_stock_count()
         return fish_stock.count()
     end
