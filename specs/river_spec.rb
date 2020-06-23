@@ -24,4 +24,9 @@ class TestRiver < MiniTest::Test
         assert_equal([], @river.fish_stock)
     end
 
+    def test_add_fish()
+        @river.add_fish(@fish)
+        assert_equal(3, @river.fish_stock_count)
+    end
+
 end
