@@ -21,7 +21,7 @@ We are going to build a small ecosystem! We want to create an ecosystem made up 
 - A river could have a fish_count method
 
 # River
-# Properties - name, fish []
+# Properties - name, fish_stock[]
 # Methods - add_fish, remove_fish, fish_count
 
 # Fish
