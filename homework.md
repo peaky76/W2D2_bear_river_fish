@@ -19,3 +19,14 @@ We are going to build a small ecosystem! We want to create an ecosystem made up 
 - A bear could have a roar method
 - A bear could have a food_count method
 - A river could have a fish_count method
+
+# River
+# Properties - name, fish []
+# Methods - add_fish, remove_fish, fish_count
+
+# Fish
+# Properties - name
+
+# Bear
+# Properties - name, stomach_contents []
+# Methods - roar, take_fish(river), fish_in_stomach
