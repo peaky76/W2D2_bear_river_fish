@@ -29,4 +29,4 @@ We are going to build a small ecosystem! We want to create an ecosystem made up 
 
 # Bear
 # Properties - name, type, stomach_contents []
-# Methods - roar, take_fish(river), fish_in_stomach
+# Methods - roar, take_fish(river), fish_in_stomach_count
