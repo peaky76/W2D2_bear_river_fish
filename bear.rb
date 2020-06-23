@@ -20,5 +20,9 @@
         # Bear add fish to stomach contents!
         @stomach_contents << caught_fish 
     end
+
+    def roar()
+        return "GRRRRRRRR!"
+    end
     
 end
