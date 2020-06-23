@@ -1,6 +1,6 @@
  class Bear
 
-    attr_reader :name, :type
+    attr_reader :name, :type, :stomach_contents
 
     def initialize(name, type)
         @name = name
@@ -17,7 +17,7 @@
         caught_fish = river.fish_stock.sample()
         # River loses fish
         river.remove_fish(caught_fish)
-        # Bear add fish to stomach contents!
+        # Bear adds fish to stomach contents!
         @stomach_contents << caught_fish 
     end
 
