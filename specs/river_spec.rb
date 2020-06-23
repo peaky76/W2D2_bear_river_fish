@@ -20,4 +20,8 @@ class TestRiver < MiniTest::Test
         assert_equal("Volga", @river.name)
     end
 
+    def test_river_is_empty()
+        assert_equal([], @river.fish_stock)
+    end
+
 end
