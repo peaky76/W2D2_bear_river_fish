@@ -14,7 +14,7 @@
 
     def take_fish(river)
         # Bear takes random fish from stock in river
-        caught_fish = river.fish_stock.sample()
+        caught_fish = river.select_random_fish()
         # River loses fish
         river.remove_fish(caught_fish)
         # Bear adds fish to stomach contents!

@@ -11,11 +11,10 @@ class TestBear < MiniTest::Test
 
     def setup()
         @bear = Bear.new("Wojtek", "Brown Bear")
-        @river = River.new("Volga")
         @fish1 = Fish.new("Sammy Salmon")
         @fish2 = Fish.new("Polly Perch")
         @fish3 = Fish.new("Tommy Tench")
-        @fish = [@fish1, @fish2, @fish3]        
+        @river = River.new("Volga", [@fish1, @fish2, @fish3])         
     end
 
     def test_has_name()
@@ -31,7 +30,6 @@ class TestBear < MiniTest::Test
     end
 
     def test_take_fish()
-        @river.add_fish(@fish)
         @bear.take_fish(@river)
         assert_equal(2, @river.fish_stock_count())
         assert_equal(1, @bear.fish_in_stomach_count())

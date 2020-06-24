@@ -1,6 +1,6 @@
 class River
 
-    attr_reader :name, :fish_stock
+    attr_reader :name
 
     def initialize(name, fish)
         @name = name
@@ -14,9 +14,13 @@ class River
     def remove_fish(fish_name)
         @fish_stock.delete(fish_name)
     end
+    
+    def select_random_fish()
+        return @fish_stock.sample()
+    end
 
     def fish_stock_count()
-        return fish_stock.count()
+        return @fish_stock.count()
     end
 
 end
